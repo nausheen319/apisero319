@@ -1,0 +1,16 @@
+{
+  "sampleData": {
+    "52ff45e2-2267-4cc9-a534-37fb30e0ac53": {
+      "payload": "sample_data/defaultstringtype.txt"
+    },
+    "0b93c944-0f22-43e1-b45d-c31f9a78fdf5": {},
+    "b8f12cf6-ab44-4699-814a-570c8cdfe81a": {
+      "payload": "sample_data/json.json"
+    },
+    "126aa716-6c5f-44f8-98c0-5ae8dca29e9d": {
+      "payload": "sample_data/json_1.json"
+    },
+    "adc14720-6734-403b-871b-001a710047d1": {},
+    "b9c0f90d-3889-4e0a-8822-4ea04c59de72": {}
+  }
+}

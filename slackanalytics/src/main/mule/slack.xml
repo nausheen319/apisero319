@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:validation="http://www.mulesoft.org/schema/mule/validation" xmlns:email="http://www.mulesoft.org/schema/mule/email"
+	xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:slack="http://www.mulesoft.org/schema/mule/slack" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/slack http://www.mulesoft.org/schema/mule/slack/current/mule-slack.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/email http://www.mulesoft.org/schema/mule/email/current/mule-email.xsd
+http://www.mulesoft.org/schema/mule/validation http://www.mulesoft.org/schema/mule/validation/current/mule-validation.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="8f676ee9-6da6-4cb8-a697-d96a235a016e" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<slack:config name="Slack_Config" doc:name="Slack Config" doc:id="4c6230c0-366a-4372-b571-39fdd2590ce7" >
+		<slack:token-connection token="${Access.token}" />
+	</slack:config>
+	<email:smtp-config name="Email_SMTP" doc:name="Email SMTP" doc:id="8bdc7000-0474-44ea-8118-37d025470690" >
+		<email:smtp-connection host="${slack.host}" user="${slack.user}" password="sdsqcnswnfadrbva" connectionTimeout="1" timeoutUnit="MINUTES" readTimeout="1" writeTimeout="1" port="${slack.port}">
+			<email:properties >
+				<email:property key="mail.smtp.starttls.enable" value="true" />
+			</email:properties>
+		</email:smtp-connection>
+	</email:smtp-config>
+	<configuration-properties doc:name="Configuration properties" doc:id="c46c6734-097c-4586-93dd-2ab3d456de06" file="config.yaml" />
+	<flow name="slackFlow" doc:id="6de40789-860b-4a52-99a6-49e2384ede5c" >
+		<scheduler doc:name="Scheduler" doc:id="44d8b4ff-8ec2-463e-af82-10f4144c2cb6" >
+			<scheduling-strategy >
+				<fixed-frequency frequency="1" timeUnit="MINUTES"/>
+			</scheduling-strategy>
+		</scheduler>
+		<scatter-gather doc:name="Scatter-Gather" doc:id="22e00f78-176d-4fab-9c19-4a678fe1de37">
+			<route >
+				<http:request method="GET" doc:name="Private Channels" doc:id="8b7958f1-235e-4d42-9c44-fb6d8ea2d5cc" url="https://slack.com/api/conversations.list" target="sero1" targetValue="#[payload.channels filter(item,ind)-&gt; item.is_member == true]" responseTimeout="50000">
+					<http:headers><![CDATA[#[{
+	"Authorization" : "Bearer " ++ "xoxp-179233091381-1580679813842-1746981034356-b6fd098c0f31ac092b02b642e120ca33"
+
+	
+}]]]></http:headers>
+					<http:query-params><![CDATA[#[%dw 2.0
+output urlencoded
+---
+{
+	pretty : 1,
+	limit : 500,
+	types : "private_channel"
+}]]]></http:query-params>
+				</http:request>
+			</route>
+			<route >
+				<http:request method="GET" doc:name="Public Channels" doc:id="c3bd081a-0276-4b04-9585-c4a1546c4a74" url="https://slack.com/api/conversations.list" responseTimeout="50000" target="sero" targetValue="#[payload.channels filter(item,ind)-&gt; item.is_member == true]">
+			<http:headers><![CDATA[#[{
+	"Authorization" : "Bearer " ++ "xoxp-179233091381-1580679813842-1746981034356-b6fd098c0f31ac092b02b642e120ca33"
+
+	
+}]]]></http:headers>
+			<http:query-params><![CDATA[#[%dw 2.0
+output urlencoded
+---
+{
+	pretty : 1,
+	limit : 999,
+	types : "public_channel"
+}]]]></http:query-params>
+		</http:request>
+			</route>
+		</scatter-gather>
+		<ee:transform doc:name="Merge Data" doc:id="b9c0f90d-3889-4e0a-8822-4ea04c59de72" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+ vars.sero1 ++ vars.sero]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<ee:transform doc:name="Retrieve Id and Channel" doc:id="bf0de5ce-13d0-419b-bcfd-81a549d7eb52" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/java
+---
+payload map(value,index)->(value.id)]]></ee:set-payload>
+			</ee:message>
+			<ee:variables >
+				<ee:set-variable variableName="chname" ><![CDATA[%dw 2.0
+output application/json
+---
+payload map(val,ind)->{
+	Id: val.id,
+	Name : val.name
+}]]></ee:set-variable>
+			</ee:variables>
+		</ee:transform>
+		<parallel-foreach doc:name="Parallel For Each" doc:id="6cc85297-ecbe-480a-898d-94a33fb4cfdf" >
+			<flow-ref doc:name="Flow Reference - slackFlow1" doc:id="0971b38c-3613-4f09-a8a7-21e1b2acf282" name="slackFlow1" />
+		</parallel-foreach>
+	</flow>
+	<flow name="slackFlow1" doc:id="99331495-01bd-40f9-966b-ee5e5255dd00" >
+		<set-variable value="#[payload]" doc:name="Channel Id" doc:id="97eddb1f-9d59-41d3-98c6-9e989c869095" variableName="varChannelId" />
+		<logger level="INFO" doc:name="Logger" doc:id="db6d084d-20ef-42bc-889b-d8286491a11d" message='#["Channel Received: " ++ payload]' />
+		<slack:conversation-history doc:name="Conversations - History" doc:id="5d27d3ee-bc06-4ea0-b8cd-16b6881eee5a" config-ref="Slack_Config" channel="#[payload]" oldest="#[now() as Number - |PT24H| as Number]" />
+		<set-payload value="#[%dw 2.0&#10;output application/java&#10;---&#10;payload]" doc:name="Set Payload" doc:id="b0ee2900-594e-4f27-8666-74b24d8cc405" />
+		<logger level="INFO" doc:name="Logger" doc:id="8686f9ec-aa68-4517-814e-3882f59bd204" message="#[payload]"/>
+		<ee:transform doc:name="Conversation" doc:id="73e0f3fe-10fd-4421-a501-a25d2bcdabad">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+payload map ((item, index) ->{
+    userid :item.user,
+    msg:item.text,
+    ts : item.ts as String {format : 'hh:mm:ss'} as Number as DateTime >> "IST",
+ } )]]></ee:set-payload>
+			</ee:message>
+			<ee:variables>
+			</ee:variables>
+		</ee:transform>
+		<choice doc:name="Choice" doc:id="8f49a2a5-e478-499d-8d9f-4f532b43e28b" >
+			<when expression="#[payload == []]">
+				<logger level="INFO" doc:name="Logger" doc:id="21ebfbcd-c134-4fef-b633-dc096036c490" message="EMPTY PAYLOAD"/>
+			</when>
+			<otherwise >
+				<flow-ref doc:name="Flow Reference - slackFlow2" doc:id="40b8d457-ab91-40be-b6ac-aa6e2696e082" name="slackFlow2" />
+			</otherwise>
+		</choice>
+	</flow>
+	<flow name="slackFlow2" doc:id="53c6bc20-7f73-4937-9f68-c5b5cf7f3567" >
+		<set-variable value="#[payload]" doc:name="Set Variable" doc:id="5ae79c87-8920-4826-b6b6-0a3895a7a910" variableName="varcInfo"/>
+		<ee:transform doc:name="Retrieve - User Ids" doc:id="d1111253-a9b2-421f-a25f-c0f77634f881">
+				<ee:message>
+					<ee:set-payload><![CDATA[%dw 2.0
+output application/java
+---
+vars.varcInfo map(item,ind)->(item.userid)]]></ee:set-payload>
+				</ee:message>
+			</ee:transform>
+		<set-variable value="#[[]]" doc:name="Store UserInfo" doc:id="2ed92608-b195-4099-9195-217350ed5810" variableName="userInfo" />
+		<foreach doc:name="For Each" doc:id="18eca767-5aca-4ad0-b0b4-26276666cb94">
+			<try doc:name="Try" doc:id="98505c76-217a-4258-8206-2034717846f2">
+				<slack:user-info doc:name="User - Info" doc:id="c5e0c6ab-0ee8-4b58-b9cd-640f87127520" config-ref="Slack_Config" user="#[payload]" />
+				<ee:transform doc:name="Get UserInfo" doc:id="1bde1669-9dd2-4533-b85d-90ec9f0b0ddd">
+				<ee:message>
+					<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+
+{
+	"id" : payload.id,
+	"Mail" :payload.profile.email,
+	"name" : payload.profile.real_name
+}]]></ee:set-payload>
+				</ee:message>
+			</ee:transform>
+				<set-variable value="#[%dw 2.0
+output application/json
+---
+vars.userInfo  + payload]" doc:name="Set Variable" doc:id="359b8f9d-2e5a-42b4-8ed2-196a4e9c9937" variableName="userInfo" />
+				<error-handler>
+						<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="6b5f526d-7c85-4b30-9ea3-48459ff947f8">
+						<logger level="INFO" doc:name="Logger" doc:id="ee45766d-0947-45bd-805c-8d1553370980" message="****Invalid User Id****" />
+					</on-error-continue>
+					</error-handler>
+				</try>
+		</foreach>
+		<set-payload value="#[vars.userInfo]" doc:name="Set Payload" doc:id="337264fb-7f09-4b81-80eb-d3d2c78a5adc" />
+		<ee:transform doc:name="Merged Payload" doc:id="eb9ce312-7295-428e-8582-806cc3806670">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+vars.varcInfo map()->{
+	userid : $.userid,
+	msg_By : (vars.userInfo filter(item,index)-> (item.id == $.userid)) distinctBy(item,index)->item,
+	msg : $.msg,
+	ts : $.ts
+} ]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<ee:transform doc:name="Identify customer messages" doc:id="23a4f62d-0072-4dec-9105-619d75759661">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+
+payload filter ((item, index) ->(
+if (sizeOf(item.msg_By) == 0) false else !( item.msg_By map ((item, index) -> item.Mail  contains 'apisero')reduce $)
+))
+]]></ee:set-payload>
+			</ee:message>
+			<ee:variables>
+			</ee:variables>
+		</ee:transform>
+		<choice doc:name="Choice" doc:id="baadb0b5-04a0-4e90-9956-b30e1f307686">
+			<when expression="#[payload == []]">
+				<logger level="INFO" doc:name="No Messages Found" doc:id="bfb2bf3c-3693-47ef-bd8b-2ee3059073c6" message="No MessageBy was Found or it is a ping from APISERO" />
+			</when>
+			<otherwise>
+					<try doc:name="Try" doc:id="71fce87a-20a9-4b09-bb97-76cb95ac552b">
+					<ee:transform doc:name="Message" doc:id="85b85a47-bd55-4bba-ba63-d251519d723c">
+						<ee:message>
+							<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+payload map(item,index)->{
+  "Message": item.msg,
+  "Sender": item.msg_By.name reduce()->($$ ++ $),
+  "Timestamp": item.ts
+}]]></ee:set-payload>
+						</ee:message>
+					</ee:transform>
+					<set-variable value='#[%dw 2.0&#10;output text/plain&#10;---&#10;""]' doc:name="Set Variable" doc:id="fa32bc51-93bc-481f-9933-c92fce6022ad" variableName="varfinalresponse"/>
+					<foreach doc:name="For Each" doc:id="2fa32a34-6704-41a2-b38f-64c3660e8075" >
+						<ee:transform doc:name="Transform Message" doc:id="a862d331-bb17-47b6-a6a3-2e067b89699e" >
+							<ee:message >
+								<ee:set-payload ><![CDATA[%dw 2.0
+output text/plain
+---
+"Message: " ++ payload.Message ++ "\n" ++ "Sender: " ++ payload.Sender ++ "\n" ++ "TimeStamp: " ++  payload.Timestamp ++ "\n\n"]]></ee:set-payload>
+							</ee:message>
+						</ee:transform>
+						<set-variable value="#[vars.varfinalresponse ++ payload]" doc:name="Set Variable" doc:id="48bf3f2f-6f26-43c1-9357-d74bb84e1f3f" variableName="varfinalresponse" />
+					</foreach>
+					<error-handler>
+							<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="02a5cff2-c7d1-4bcd-ad29-87785e3ec317">
+								<logger level="INFO" doc:name="Logger" doc:id="22540c3d-fc5a-4fd1-91c6-e0a657f43bdd" message="*** Error can be ignored****" />
+							</on-error-continue>
+						</error-handler>
+					</try>
+				<set-payload value="#[vars.varfinalresponse]" doc:name="Set Payload" doc:id="0ddc8972-9ed0-4ad5-a9f5-302b883a9c14" />
+				<ee:transform doc:name="Transform Message - Email Body" doc:id="fbf71d57-03f5-47fc-a918-17d787eb0430">
+					<ee:message>
+						<ee:set-payload><![CDATA[%dw 2.0
+output text/plain
+---
+"Hi Team," ++ "\n\n" ++ "Please find below information." ++ "\n\n" ++ vars.varfinalresponse ++ "\n" ++ "Please take necessary action asap. Thank You" ++ "\n\n" ++ "Regards," ++ "\n" ++ "SERO BOT" ]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+				<set-variable value='#[%dw 2.0&#10;output text/plain&#10; &#10;var a = vars.chname filter ((item, index) -&gt; item.Id == vars.varChannelId)&#10;---&#10;"Slack channel:" ++ " " ++ (a.Name reduce()-&gt;($$ ++ $))]' doc:name="Set Variable" doc:id="885e4fba-4e4c-47b4-b527-4b0403021dcc" variableName="varemailsubject"/>
+				<email:send doc:name="Send" doc:id="ce991ac8-87f8-4f1a-8931-6fdbfb9970c0" config-ref="Email_SMTP" fromAddress="sero.bot@apisero.com" subject='#[vars.varemailsubject]'>
+					<email:to-addresses >
+						<email:to-address value="mohammed.shakir@apisero.com" />
+					</email:to-addresses>
+					<email:body contentType="text/plain" encoding="UTF-8" >
+					</email:body>
+				</email:send>
+			</otherwise>
+		</choice>
+	</flow>
+</mule>

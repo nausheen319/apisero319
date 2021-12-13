@@ -1,0 +1,7 @@
+Access:
+  token: "xoxp-179233091381-1580679813842-1746981034356-b6fd098c0f31ac092b02b642e120ca33"
+
+slack:
+  host: "smtp.gmail.com"
+  port: "587"
+  user: "sero.bot@apisero.com"

@@ -1,0 +1,2035 @@
+[
+  {
+    "id": "C58GTD2MP",
+    "name": "general",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1493960964,
+    "is_archived": false,
+    "is_general": true,
+    "unlinked": 0,
+    "name_normalized": "general",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "U591XC8LT",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "Company-wide announcements and work-based matters",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "This channel is for team-wide communication and announcements. All team members are in this channel.",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 1688
+  },
+  {
+    "id": "C595H5LGL",
+    "name": "random",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1493960964,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "random",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "U591XC8LT",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "Non-work banter and water cooler conversation",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "A place for non-work-related flimflam, faffing, hodge-podge or jibber-jabber you'd prefer to keep out of more focused work-related channels.",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 878
+  },
+  {
+    "id": "C017PH4G8CX",
+    "name": "revance-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1596300298,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "revance-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UFU0HJU67",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 12
+  },
+  {
+    "id": "C01AJU3EDU0",
+    "name": "cmcu-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1598943917,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "cmcu-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "CMCU and Apisero shared channel.",
+      "creator": "UHR2CNW64",
+      "last_set": 1598943918
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 7
+  },
+  {
+    "id": "C01B5HKPB36",
+    "name": "fab-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1600446254,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 1608200941,
+    "name_normalized": "fab-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UPQNZS4F6",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      "fab-project-team"
+    ],
+    "num_members": 5
+  },
+  {
+    "id": "C01D76U042E",
+    "name": "cabi-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1603460251,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 1612785831,
+    "name_normalized": "cabi-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "U017CP9509Z",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "chaneel to connect cabi team,apisero team and hotwaxsystem team",
+      "creator": "U017CP9509Z",
+      "last_set": 1603460252
+    },
+    "previous_names": [
+      "external-mt6-cabi-apisero"
+    ],
+    "num_members": 5
+  },
+  {
+    "id": "C01E5PYCQSK",
+    "name": "shopify-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1605189508,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "shopify-apisero-shared",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "U018BSJ07NY",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "T596V2PB7",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 12
+  },
+  {
+    "id": "C01E9F9Q0KZ",
+    "name": "rogers-internal",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1605286270,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "rogers-internal",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "U01E7FCP5TK",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "Field channel for Rogers: To collaborate/sync on Rogers activities",
+      "creator": "U01DMD249UN",
+      "last_set": 1605286467
+    },
+    "purpose": {
+      "value": "Rogers Communication",
+      "creator": "U01E7FCP5TK",
+      "last_set": 1605286271
+    },
+    "previous_names": [
+      "field-rogers-internal",
+      "rogers-apisero-internal",
+      "fieldrogers-apisero-shared",
+      "field_rogers"
+    ],
+    "num_members": 11
+  },
+  {
+    "id": "C01EXG9JV51",
+    "name": "searshtransform-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1605621927,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "searshtransform-apisero-shared",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "T596V2PB7",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "Apisero and Sears Holding/Transformco shared channel.",
+      "creator": "UHR2CNW64",
+      "last_set": 1605621928
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 8
+  },
+  {
+    "id": "C01FML61PH7",
+    "name": "patelco-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1605926840,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 1613907513,
+    "name_normalized": "patelco-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "U017UAV5GF4",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      "apisero-patelco"
+    ],
+    "num_members": 5
+  },
+  {
+    "id": "C01FSC0RU2K",
+    "name": "formelife-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1607106456,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "formelife-apisero-shared",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "T596V2PB7",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "Apisero FormeLife Shared Slack channel",
+      "creator": "UHR2CNW64",
+      "last_set": 1607106457
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 8
+  },
+  {
+    "id": "C01GMMRK6JH",
+    "name": "uccu-apisero-shared-channel",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1607707256,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "uccu-apisero-shared-channel",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "URA066S1F",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 14
+  },
+  {
+    "id": "C01GYU3H24A",
+    "name": "goodyear-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1608053021,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 1617870151,
+    "name_normalized": "goodyear-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "Goodyear and Apisero Slack Channel",
+      "creator": "UHR2CNW64",
+      "last_set": 1608053022
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 8
+  },
+  {
+    "id": "C01H0JVD4CA",
+    "name": "goosehead-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1608101103,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 1620645937,
+    "name_normalized": "goosehead-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UQ66C9SNB",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 12
+  },
+  {
+    "id": "C01HB5654MA",
+    "name": "supplychainsolutions-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1608214360,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 1616323926,
+    "name_normalized": "supplychainsolutions-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 7
+  },
+  {
+    "id": "C01HCPJNQN9",
+    "name": "aviatrix-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1608656569,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "aviatrix-apisero-shared",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "T596V2PB7",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "aviatrix and apisero shared channel.",
+      "creator": "UHR2CNW64",
+      "last_set": 1608656570
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 8
+  },
+  {
+    "id": "C01HU7SUG0N",
+    "name": "liquibox-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1609858958,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 1617619022,
+    "name_normalized": "liquibox-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "LiquiBox and Apisero Shared Slack channel",
+      "creator": "UHR2CNW64",
+      "last_set": 1609858958
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 11
+  },
+  {
+    "id": "C01J5LVNAHE",
+    "name": "a4media-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1608656190,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "a4media-apisero-shared",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "T596V2PB7",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "a4media and apisero slack shared channel.",
+      "creator": "UHR2CNW64",
+      "last_set": 1608656191
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 16
+  },
+  {
+    "id": "C01J5NRHG56",
+    "name": "ordermark-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1608657557,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "ordermark-apisero-shared",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "T596V2PB7",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "ordermark and apisero shared channel",
+      "creator": "UHR2CNW64",
+      "last_set": 1608657558
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 12
+  },
+  {
+    "id": "C01J90SP6HG",
+    "name": "flaskparking-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1610088759,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "flaskparking-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "Flash Parking and Apisero Shared Slack Channel.",
+      "creator": "UHR2CNW64",
+      "last_set": 1610088759
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 16
+  },
+  {
+    "id": "C01JJFWDCV9",
+    "name": "ati-restoration-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1610467328,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 1618225805,
+    "name_normalized": "ati-restoration-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "U01EN649BB9",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "ati-restoration",
+      "creator": "U01EN649BB9",
+      "last_set": 1610467329
+    },
+    "previous_names": [
+      "ati-restoration"
+    ],
+    "num_members": 12
+  },
+  {
+    "id": "C01LLTSQ0AZ",
+    "name": "chg-healthcare-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1612280918,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "chg-healthcare-apisero-shared",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "T596V2PB7",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 21
+  },
+  {
+    "id": "C01LQEARCS0",
+    "name": "apisero-valpak-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1612187203,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 1619952185,
+    "name_normalized": "apisero-valpak-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UL4932YF8",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 8
+  },
+  {
+    "id": "C01LQKW1WUU",
+    "name": "apisero-snipesusa-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1612189629,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "apisero-snipesusa-shared",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "UL4932YF8",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "T596V2PB7",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 9
+  },
+  {
+    "id": "C01M9KS3H7E",
+    "name": "apisero-bodiesdoneright-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1612504003,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 1620299156,
+    "name_normalized": "apisero-bodiesdoneright-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UL4932YF8",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 12
+  },
+  {
+    "id": "C01MUARV10B",
+    "name": "intermedia-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1613062338,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "intermedia-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 8
+  },
+  {
+    "id": "C01P1RA8528",
+    "name": "apisero-academy-mortgage-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1613985513,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 1621767744,
+    "name_normalized": "apisero-academy-mortgage-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UL4932YF8",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 6
+  },
+  {
+    "id": "C01P24VPWKF",
+    "name": "crossmark-global-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1614149611,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 1622365850,
+    "name_normalized": "crossmark-global-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 10
+  },
+  {
+    "id": "C01P86ECRU0",
+    "name": "apisero-absolute-medical-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1613650461,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "apisero-absolute-medical-shared",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "UL4932YF8",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "T596V2PB7",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 11
+  },
+  {
+    "id": "C01PP7RPH3N",
+    "name": "tucsonfcu-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1614346929,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 1622367405,
+    "name_normalized": "tucsonfcu-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 8
+  },
+  {
+    "id": "C01PU718NUA",
+    "name": "apisero-presidio-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1614677139,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "apisero-presidio-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UL4932YF8",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 5
+  },
+  {
+    "id": "C01S5ERN0CV",
+    "name": "columbia-dist-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1616567692,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "columbia-dist-apisero-shared",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "T596V2PB7",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 11
+  },
+  {
+    "id": "C01U6F85T5L",
+    "name": "domino-data-lab-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1618470797,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "domino-data-lab-apisero-shared",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "T596V2PB7",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 17
+  },
+  {
+    "id": "C021ZA60ZD3",
+    "name": "tri-pointe-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1621226753,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "tri-pointe-apisero-shared",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "T596V2PB7",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 20
+  },
+  {
+    "id": "C023TG3BX8T",
+    "name": "allied-electronics-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1622649658,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "allied-electronics-apisero-shared",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "T596V2PB7",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 14
+  },
+  {
+    "id": "C024066R2L9",
+    "name": "iron-systems-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1622550307,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 1631348102,
+    "name_normalized": "iron-systems-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 9
+  },
+  {
+    "id": "C024YK3L0SZ",
+    "name": "plby-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1623734337,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "plby-apisero-shared",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "T596V2PB7",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 10
+  },
+  {
+    "id": "C0251TESCGK",
+    "name": "balsam-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1623734141,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "balsam-apisero-shared",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "T596V2PB7",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 10
+  },
+  {
+    "id": "C025YAAMQBC",
+    "name": "al-malki-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1624455244,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "al-malki-apisero-shared",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "T596V2PB7",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 17
+  },
+  {
+    "id": "C026F3NKCNS",
+    "name": "marine-c-u-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1625044926,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "marine-c-u-apisero-shared",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "T596V2PB7",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 9
+  },
+  {
+    "id": "C0276B0F2TV",
+    "name": "university-of-colorado-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1625567303,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "university-of-colorado-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 6
+  },
+  {
+    "id": "C029DKPBG6A",
+    "name": "omi-industries-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1627570749,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "omi-industries-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 12
+  },
+  {
+    "id": "C02AZT7JC79",
+    "name": "banc-of-california-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1629198704,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "banc-of-california-apisero-shared",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "T596V2PB7",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 19
+  },
+  {
+    "id": "C02CFNSCWR3",
+    "name": "sany-america-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1630036693,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "sany-america-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "U01ADA16D0Q",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      "sany-america-shared"
+    ],
+    "num_members": 11
+  },
+  {
+    "id": "C02DLE72R2T",
+    "name": "strathcona-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1631274658,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "strathcona-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 13
+  },
+  {
+    "id": "C02EYSXNN75",
+    "name": "touch-bistro-apisero-shared",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1632124289,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "touch-bistro-apisero-shared",
+    "is_shared": false,
+    "parent_conversation": null,
+    "creator": "UHR2CNW64",
+    "is_ext_shared": false,
+    "is_org_shared": false,
+    "shared_team_ids": [
+      "T596V2PB7"
+    ],
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 11
+  },
+  {
+    "id": "C01F12P2QSC",
+    "name": "carltonone-apisero-mulesoft",
+    "is_channel": true,
+    "is_group": false,
+    "is_im": false,
+    "created": 1604932653,
+    "is_archived": false,
+    "is_general": false,
+    "unlinked": 0,
+    "name_normalized": "carltonone-apisero-mulesoft",
+    "is_shared": true,
+    "parent_conversation": null,
+    "creator": "UCESWMG69",
+    "is_ext_shared": true,
+    "is_org_shared": false,
+    "pending_shared": [
+      
+    ],
+    "pending_connected_team_ids": [
+      
+    ],
+    "is_pending_ext_shared": false,
+    "conversation_host_id": "TCE5JHR25",
+    "is_member": true,
+    "is_private": false,
+    "is_mpim": false,
+    "topic": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "purpose": {
+      "value": "",
+      "creator": "",
+      "last_set": 0
+    },
+    "previous_names": [
+      
+    ],
+    "num_members": 32
+  }
+]

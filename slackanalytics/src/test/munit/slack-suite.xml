@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="slack-suite.xml" />
+	<munit:test name="slackFlow-test" doc:id="b82dddb1-2420-418b-9926-9ef612ad303a" >
+		<munit:behavior >
+			<munit-tools:spy doc:name="Spy Conversations - List" doc:id="048c7acc-d3e5-479c-94cf-53bd5aeb433d" processor="slack:list-conversations">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="68f6e6fd-64a6-48e9-88f8-a484ab5b0e52" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:before-call >
+					<munit-tools:assert doc:name="Assert payload" doc:id="46e25a8a-31fd-4dd1-8af9-129dffe2b8ec" message="The payload does not match">
+						<munit-tools:that ><![CDATA[#[%dw 2.0
+import slackFlowtest::spy_assert_payload
+---
+spy_assert_payload::main({payload: payload, attributes: attributes, vars: vars})]]]></munit-tools:that>
+					</munit-tools:assert>
+				</munit-tools:before-call>
+				<munit-tools:after-call >
+					<munit-tools:assert doc:name="Assert payload" doc:id="9865dc35-71ad-4bc5-83a7-a69ff8a5ba71" message="The payload does not match">
+						<munit-tools:that ><![CDATA[#[%dw 2.0
+import slackFlowtest::spy_assert_payload1
+---
+spy_assert_payload1::main({payload: payload, attributes: attributes, vars: vars})]]]></munit-tools:that>
+					</munit-tools:assert>
+				</munit-tools:after-call>
+			</munit-tools:spy>
+			<munit-tools:spy doc:name="Spy Filter channels" doc:id="43870c95-06ca-4f3d-a086-2f47c04d6500" processor="ee:transform">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="575b57f4-d328-4129-bab3-7c472c2c2423" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+				<munit-tools:before-call >
+					<munit-tools:assert doc:name="Assert payload" doc:id="1dd167f6-f160-4d3e-bfc5-672b27f2e25c" message="The payload does not match">
+						<munit-tools:that ><![CDATA[#[%dw 2.0
+import slackFlowtest::spy_assert_payload2
+---
+spy_assert_payload2::main({payload: payload, attributes: attributes, vars: vars})]]]></munit-tools:that>
+					</munit-tools:assert>
+				</munit-tools:before-call>
+				<munit-tools:after-call >
+					<munit-tools:assert doc:name="Assert payload" doc:id="8f6f0cc1-1349-4143-bae5-dde0f459470f" message="The payload does not match">
+						<munit-tools:that ><![CDATA[#[%dw 2.0
+import slackFlowtest::spy_assert_payload3
+---
+spy_assert_payload3::main({payload: payload, attributes: attributes, vars: vars})]]]></munit-tools:that>
+					</munit-tools:assert>
+				</munit-tools:after-call>
+			</munit-tools:spy>
+			<munit:set-event doc:name="Set Input" doc:id="154576fa-4ba5-49ed-8e77-14d7f4169166" >
+				<munit:payload value="#[readUrl('classpath://slackFlowtest\set-event_payload.dwl')]" encoding="UTF-8" />
+				<munit:attributes value="#[readUrl('classpath://slackFlowtest\set-event_attributes.dwl')]" />
+			</munit:set-event>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to slackFlow" doc:id="95828d22-863c-4f2f-a88a-32067fb31be5" name="slackFlow"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert doc:name="Assert payload" doc:id="70cf16d2-ace5-4ef1-b227-f79f495df331" message="The payload does not match">
+				<munit-tools:that ><![CDATA[#[%dw 2.0
+import slackFlowtest::assert_expression_payload
+---
+assert_expression_payload::main({payload: payload, attributes: attributes, vars: vars})]]]></munit-tools:that>
+			</munit-tools:assert>
+			<munit-tools:verify-call doc:name="Verify Flow Reference" doc:id="9099d967-d2ae-4e91-884a-766cab0fe3c0" processor="flow-ref" times="42">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="0971b38c-3613-4f09-a8a7-21e1b2acf282" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
+			<munit-tools:verify-call doc:name="Verify Conversations - List" doc:id="c08e022e-c52a-4b2e-a39c-a71c29258915" processor="slack:list-conversations" times="1">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="68f6e6fd-64a6-48e9-88f8-a484ab5b0e52" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
+			<munit-tools:verify-call doc:name="Verify Filter channels" doc:id="2e82a4bc-6250-4aa1-8e3d-86585b0ee0a5" processor="ee:transform" times="1">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="575b57f4-d328-4129-bab3-7c472c2c2423" attributeName="doc:id" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
+		</munit:validation>
+	</munit:test>
+
+
+</mule>
